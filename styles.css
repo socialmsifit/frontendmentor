@@ -1,0 +1,299 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family:"montserrat" "Fraunces" ;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+body{
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+/* ...mobile design first.... */
+
+
+
+.product-desktop-mobile{
+    height: 300px;
+}
+
+.product-desktop{
+    display: none;
+}
+
+.container{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.product-details{
+    padding-left: 30px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+
+.macro-details{
+    font-family: "montserrat";
+    font-size: 14px;
+    font-weight: 700;
+    opacity: .7;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.big-details{
+    font-family: "Fraunces";
+    font-size:3rem;
+    font-weight:700 ;
+    line-height: .87;
+    padding-bottom: 12px;
+    display: inlne;
+}
+.big-details1{
+    font-family: "Fraunces";
+    font-size:3rem;
+    font-weight:700 ;
+    line-height: .87;
+    padding-bottom: 12px;
+    display: inlne;
+}
+.big-details2{
+    font-family: "Fraunces";
+    font-size:3rem;
+    font-weight:700 ;
+    line-height: .87;
+    padding-bottom: 12px;
+    display: inlne-block;
+}
+.big-details3{
+    font-family: "Fraunces";
+    font-size:3rem;
+    font-weight:700 ;
+    line-height: .87;
+    padding-bottom: 12px;
+    /* display: inlne-block; */
+}
+.micro-details{
+    font-family: "montserrat";
+    font-weight: 500;
+   font-stretch: extra-expanded;
+   padding-bottom: 15px;
+}
+section{
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.price1{
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--Dark-cyan);
+}
+
+.price2, .price3 {
+    font-family: "Fraunces";
+    font-weight: 350;
+    font-size: .9rem;
+    text-decoration: line-through;
+    flex-direction: column;
+   padding-top: 6.9px;
+   margin-left:2rem;
+   color: var(--Very-dark-blue);
+}
+
+
+.butt{
+    display: inline-block;
+}
+.button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    font-family: "montserrat";
+    font-weight: 500;
+    font-size: 12px;
+   background-color: var(--Dark-cyan);
+   color: var(--White);
+   border-radius: 5px;
+   border: 1px solid var(--Dark-cyan);
+   margin-left: auto;
+   margin-right: auto;
+   cursor: pointer;
+}
+.button:hover{
+    background-color: hsl(159, 30%, 24%);
+}
+.icon-cart{
+    display: inline-block;
+}
+
+
+/* ....desktop-design.... */
+
+
+@media  (width>=600px) {
+
+
+    .product-desktop-mobile{
+        display: none;
+    }
+    
+    .product-desktop{
+        display: flex;
+        height: 40rem;
+        max-width: 100%;
+    }
+    
+    .container{
+        background-color: var(--White);
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 5;
+        margin-top: 50px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        height: 40rem;
+    }
+    
+    .product-details{
+        padding-left: 30px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+    .deet{
+        line-height: .4rem;
+    }
+    
+    .macro-details{
+        font-family: "montserrat";
+        font-size: 20px;
+        font-weight: 700;
+        opacity: .7;
+        padding-bottom: 27px;
+        padding-top: 20px;
+    }
+    
+    .big-details{
+        font-family: "Fraunces";
+        font-size:5rem;
+        font-weight:700 ;
+        line-height: .87;
+        padding-bottom: 12px;
+        display:block;
+        color: var(--Very-dark-blue);
+    }
+   .big-details1{
+        font-family: "Fraunces";
+        font-size:5rem;
+        font-weight:700 ;
+        line-height: .87;
+        display:inline-block;
+        color: var(--Very-dark-blue);
+   }
+   .big-details2{
+    font-family: "Fraunces";
+    font-size:5rem;
+    font-weight:700 ;
+    line-height: .87;
+    color: var(--Very-dark-blue);
+    display:inline-block;
+   }
+   .big-details3{
+    font-family: "Fraunces";
+    font-size:5rem;
+    font-weight:700 ;
+    line-height: .87;
+    color: var(--Very-dark-blue);
+    display:block;
+   }
+    
+    .micro-details{
+        font-family: "montserrat";
+        font-weight: 500;
+       font-stretch: extra-expanded;
+       padding-bottom: 15px;
+    }
+    section{
+        display: flex;
+        padding-bottom: 20px;
+    }
+    
+    .price1, span{
+        font-family: "Fraunces";
+        font-weight: 700;
+        font-size: 2rem;
+        color: var(--Dark-cyan);
+    }
+    
+    .price2, .price3 {
+        font-family: "Fraunces";
+        font-weight: 350;
+        font-size: .9rem;
+        text-decoration: line-through;
+        flex-direction: column;
+       padding-top: 6.9px;
+       margin-left:2rem;
+       color: var(--Very-dark-blue);
+    }
+    
+    
+    .butt{
+        display: inline-block;
+    }
+    .button{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        font-family: "montserrat";
+        font-weight: 500;
+        font-size: 12px;
+       background-color: var(--Dark-cyan);
+       color: var(--White);
+       border-radius: 5px;
+       border: 1px solid var(--Dark-cyan);
+       margin-left: auto;
+       margin-right: auto;
+       cursor: pointer;
+    }
+    .button:hover{
+        background-color: hsl(159, 30%, 24%);
+    }
+    .icon-cart{
+        display: inline-block;
+    }
+    
+}
